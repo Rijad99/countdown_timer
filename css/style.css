@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Red Hat Text', sans-serif;
+  color: #fff;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1e1f29;
+  overflow: hidden;
+}
+
+body .container {
+  width: 100%;
+  height: 100%;
+}
+
+body .container .main-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body .container .overlay-bg {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+body .container .content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .content h4 {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+body .container .content .countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+}
+
+body .container .content .countdown .box {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 15px;
+  border-radius: 5px;
+  background-color: #343650;
+  -webkit-box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+body .container .content .countdown .box::before, body .container .content .countdown .box::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #1e1f29;
+}
+
+body .container .content .countdown .box::before {
+  top: 50%;
+  left: -4px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body .container .content .countdown .box::after {
+  top: 50%;
+  right: -4px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body .container .content .countdown .box .flip-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(30, 31, 41, 0.3);
+}
+
+body .container .content .countdown .box > :first-child {
+  color: #fb6087;
+  font-size: 3rem;
+  font-weight: 700;
+  z-index: 1;
+}
+
+body .container .content .countdown .box > :last-child {
+  position: absolute;
+  bottom: -30px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #8486a9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+body .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body .container ul li {
+  list-style-type: none;
+  margin: 0 15px;
+}
+
+body .container ul li a img {
+  width: 16px;
+}
+/*# sourceMappingURL=style.css.map */
